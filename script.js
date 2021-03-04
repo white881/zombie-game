@@ -251,7 +251,7 @@ function Player (_x, _y, _gunID)
 					this.Pickup(7);
 				if (keysDown[56])
 					this.Pickup(8);
-				if (keysDown[56])
+				if (keysDown[57])
 					this.Pickup(9);
 
 				// ------------------
