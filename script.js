@@ -41,7 +41,7 @@ const ZOMBIE_DECOMPOSE = 900;
 const ZOMBIE_PUSH = 0.05;
 
 const GROUNDITEM_SIZE = 10;
-const GROUNDITEM_RANGE = 20;
+const GROUNDITEM_RANGE = 1000;
 
 const BLOOD_LIFETIMEMAX = 1000;
 const BLOOD_LIFETIMEMIN = 750;
@@ -87,7 +87,7 @@ var items =
 [
 /*0*/ { name: "Nothing" },
   
- { name: "run",      speed: 1.40},
+ /*8*/ { name: "run",      speed: 1.40},
   
 //    --- Guns ---
 /*1*/ { name: "Pistol",              dmg: 3, range: { min: 70, max: 80 },   rate: 30, count: 1,  accr: 0.05,  speed: 1,   force: 0.5,  recoil: 0,    mag: 15,  reload: 100,  auto: false },
