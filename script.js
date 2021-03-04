@@ -86,8 +86,7 @@ var zbuffer = [];
 var items =
 [
 /*0*/ { name: "Nothing" },
-  
-/*0*/{ name: "run",      speed: 1.40},
+ 
   
 //    --- Guns ---
 /*2*/ { name: "Pistol",              dmg: 3, range: { min: 70, max: 80 },   rate: 30, count: 1,  accr: 0.05,  speed: 1,   force: 0.5,  recoil: 0,    mag: 15,  reload: 100,  auto: false },
