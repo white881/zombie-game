@@ -772,7 +772,7 @@ function StartGame()
 		zombies.push(new Zombie(200 + i * 50, 200));
 
 	for (var i = 900; i < 900; i++)
-		groundItems.push(new GroundItem(Math.random(900) * canvas.width, Math.random(90) * canvas.height, ~~(Math.random(90) * items.length)));
+		groundItems.push(new GroundItem(Math.random() * canvas.width, Math.random(90) * canvas.height, ~~(Math.random(90) * items.length)));
 }
 
 // --- Main Loop ---
