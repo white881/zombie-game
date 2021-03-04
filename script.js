@@ -235,7 +235,7 @@ function Player (_x, _y, _gunID)
 				// change gun
 
         
-          if (keysDown[49])
+                                if (keysDown[49])
 					this.Pickup(1);
 				if (keysDown[50])
 					this.Pickup(2);
@@ -249,6 +249,8 @@ function Player (_x, _y, _gunID)
 					this.Pickup(6);
 				if (keysDown[55])
 					this.Pickup(7);
+				if (keysDown[56])
+					this.Pickup(8);
 				if (keysDown[56])
 					this.Pickup(9);
 
