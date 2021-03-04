@@ -86,6 +86,9 @@ var zbuffer = [];
 var items =
 [
 /*0*/ { name: "Nothing" },
+  
+ { name: "run",      speed: 1.40},
+  
 //    --- Guns ---
 /*1*/ { name: "Pistol",              dmg: 3, range: { min: 70, max: 80 },   rate: 30, count: 1,  accr: 0.05,  speed: 1,   force: 0.5,  recoil: 0,    mag: 15,  reload: 100,  auto: false },
 /*2*/ { name: "plazma gun",              dmg: 6, range: { min: 30, max: 30 },   rate: 100, count: 100,  accr: 0.5,  speed: 0.30,   force: 0.5,  recoil:5.19,    mag: 1,  reload: 90,  auto: false },
@@ -249,7 +252,7 @@ function Player (_x, _y, _gunID)
 				if (keysDown[55])
 					this.Pickup(7);
 				if (keysDown[56])
-					this.Pickup(9);
+					this.Pickup(8);
 
 				// ------------------
         
