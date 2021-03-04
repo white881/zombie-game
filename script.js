@@ -87,17 +87,17 @@ var items =
 [
 /*0*/ { name: "Nothing" },
   
- /*1*/ { name: "run",      speed: 1.40},
+ { name: "run",      speed: 1.40},
   
 //    --- Guns ---
-/*2*/ { name: "Pistol",              dmg: 3, range: { min: 70, max: 80 },   rate: 30, count: 1,  accr: 0.05,  speed: 1,   force: 0.5,  recoil: 0,    mag: 15, reload: 100,  auto: false },
-/*3*/ { name: "plazma gun",          dmg: 6, range: { min: 30, max: 30 },   rate: 99, count: 99, accr: 0.05,  speed: 0.30,force: 0.5,  recoil:5.19,  mag: 1,  reload: 90,   auto: false },
-/*4*/ { name: "Rifle",               dmg: 8, range: { min: 160, max: 200 }, rate: 80, count: 1,  accr: 0.01,  speed: 0.8, force: 0.75, recoil: 0.5,  mag: 5,  reload: 200,  auto: false },
-/*5*/ { name: "Pump-Action Shotgun", dmg: 1, range: { min: 30, max: 70 },   rate: 75, count: 8,  accr: 0.175, speed: 0.8, force: 0.75, recoil: 0.75, mag: 6,  reload: 300,  auto: false },
-/*6*/ { name: "Double-Barrel",       dmg: 2, range: { min: 10, max: 50 },   rate: 20, count: 12, accr: 0.5,   speed: 0.7, force: 2,    recoil: 1,    mag: 2,  reload: 200,  auto: false },
-/*7*/ { name: "Sub-Machine Gun",     dmg: 2, range: { min: 40, max: 70 },   rate: 8,  count: 1,  accr: 0.2,   speed: 1,   force: 0.3,  recoil: 0.1,  mag: 30, reload: 150,  auto: true  },
-/*8*/ { name: "Machine Gun",         dmg: 3, range: { min: 80, max: 125 },  rate: 12, count: 1,  accr: 0.1,   speed: 0.8, force: 0.8,  recoil: 0.25, mag: 24, reload: 200,  auto: true  },
-/*9*/ { name: "Mini Gun",            dmg: 2, range: { min: 80, max: 125 },  rate: 5,  count: 1,  accr: 0.15,  speed: 0.5, force: 1,    recoil: 0.5, mag: 200, reload: 1000, auto: true  }
+/*1*/ { name: "Pistol",              dmg: 3, range: { min: 70, max: 80 },   rate: 30, count: 1,  accr: 0.05,  speed: 1,   force: 0.5,  recoil: 0,    mag: 15,  reload: 100,  auto: false },
+/*9*/ { name: "plazma gun",          dmg: 6, range: { min: 30, max: 30 },   rate: 100, count: 100,  accr: 0.5,  speed: 0.30,   force: 0.5,  recoil:5.19,    mag: 1,  reload: 90,  auto: false },
+/*2*/ { name: "Rifle",               dmg: 8, range: { min: 160, max: 200 }, rate: 80, count: 1,  accr: 0.01,  speed: 0.8, force: 0.75, recoil: 0.5,  mag: 5,  reload: 200,  auto: false },
+/*3*/ { name: "Pump-Action Shotgun", dmg: 1, range: { min: 30, max: 70 },   rate: 75, count: 8,  accr: 0.175, speed: 0.8, force: 0.75, recoil: 0.75, mag: 6,  reload: 300,  auto: false },
+/*4*/ { name: "Double-Barrel",       dmg: 2, range: { min: 10, max: 50 },   rate: 20, count: 12, accr: 0.5,   speed: 0.7, force: 2,    recoil: 1,    mag: 2,  reload: 200,  auto: false },
+/*5*/ { name: "Sub-Machine Gun",     dmg: 2, range: { min: 40, max: 70 },   rate: 8,  count: 1,  accr: 0.2,   speed: 1,   force: 0.3,  recoil: 0.1,  mag: 30, reload: 150,  auto: true  },
+/*6*/ { name: "Machine Gun",         dmg: 3, range: { min: 80, max: 125 },  rate: 12, count: 1,  accr: 0.1,   speed: 0.8, force: 0.8,  recoil: 0.25, mag: 24, reload: 200,  auto: true  },
+/*7*/ { name: "Mini Gun",            dmg: 2, range: { min: 80, max: 125 },  rate: 5,  count: 1,  accr: 0.15,  speed: 0.5, force: 1,    recoil: 0.5, mag: 200, reload: 1000, auto: true  }
 ];
 
 // ==================== CLASSES ====================
@@ -912,10 +912,10 @@ function Draw ()
 	if (_DRAW_FPS)   DrawFPS();
 
 	// Borders
-	DrawRect("black", 0, 0, canvas.width, 5);
-	DrawRect("black", 0, canvas.height, canvas.width, -5);
-	DrawRect("black", 0, 0, 5, canvas.height);
-	DrawRect("black", canvas.width, 0, -5, canvas.height);
+	DrawRect("grey", 0, 0, canvas.width, 5);
+	DrawRect("grey", 0, canvas.height, canvas.width, -5);
+	DrawRect("grey", 0, 0, 5, canvas.height);
+	DrawRect("grey", canvas.width, 0, -5, canvas.height);
 }
 
 function DrawRect (colour, x, y, xSize, ySize)
@@ -952,7 +952,7 @@ function DrawGame ()
 function DrawUI ()
 {
 	// Health
-	DrawRect("black", 10, canvas.height - 10, 30, -PLAYER_HEALTH - 10);
+	DrawRect("grey", 10, canvas.height - 10, 30, -PLAYER_HEALTH - 10);
 	DrawRect("black", 15, canvas.height - 15, 20, -PLAYER_HEALTH);
 	DrawRect("red", 15, canvas.height - 15, 20, -player.health);
 
