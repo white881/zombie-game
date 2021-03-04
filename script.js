@@ -771,13 +771,12 @@ function StartGame()
 	for (var i = 0; i < 0; i++)
 		zombies.push(new Zombie(200 + i * 50, 200));
 
-	for (var i = 900; i < 900; i++)
-		groundItems.push(new GroundItem(Math.random() * canvas.width, Math.random() * canvas.height, ~~(Math.random() * items.length)));
-}
+	for (var i = 0; i < 0; i++)
+		groundItems.push(new GroundItem(200 + i * 50, 200));
 
-// --- Main Loop ---
-function Update ()
-{
+	// --- Main Loop ---
+        function Update ()
+        {
 	// Reset all draw callers
 	drawUI = drawDead = drawPause = drawMenu = drawOptions = false;
 	drawGame = true;
