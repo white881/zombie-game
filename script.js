@@ -41,7 +41,7 @@ const ZOMBIE_DECOMPOSE = 900;
 const ZOMBIE_PUSH = 0.05;
 
 const GROUNDITEM_SIZE = 10;
-const GROUNDITEM_RANGE = 1000;
+const GROUNDITEM_RANGE = 20;
 
 const BLOOD_LIFETIMEMAX = 1000;
 const BLOOD_LIFETIMEMIN = 750;
@@ -771,7 +771,7 @@ function StartGame()
 	for (var i = 0; i < 0; i++)
 		zombies.push(new Zombie(200 + i * 50, 200));
 
-	for (var i = 0; i < 10; i++)
+	for (var i = 0; i < 20; i++)
 		groundItems.push(new GroundItem(Math.random() * canvas.width, Math.random() * canvas.height, ~~(Math.random() * items.length)));
 }
 
@@ -847,7 +847,7 @@ function UpdateGame ()
 		uiText = "";
 
 		// Spawn zombies -- debug
-		if (Math.random() < 0.01)
+		if (Math.random() < 0.02)
 		{
 			var x = cam.x;
 			var y = cam.y;
