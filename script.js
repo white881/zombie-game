@@ -912,10 +912,10 @@ function Draw ()
 	if (_DRAW_FPS)   DrawFPS();
 
 	// Borders
-	DrawRect("grey", 0, 0, canvas.width, 5);
-	DrawRect("grey", 0, canvas.height, canvas.width, -5);
-	DrawRect("grey", 0, 0, 5, canvas.height);
-	DrawRect("grey", canvas.width, 0, -5, canvas.height);
+	DrawRect("black", 0, 0, canvas.width, 5);
+	DrawRect("black", 0, canvas.height, canvas.width, -5);
+	DrawRect("black", 0, 0, 5, canvas.height);
+	DrawRect("black", canvas.width, 0, -5, canvas.height);
 }
 
 function DrawRect (colour, x, y, xSize, ySize)
@@ -952,7 +952,7 @@ function DrawGame ()
 function DrawUI ()
 {
 	// Health
-	DrawRect("grey", 10, canvas.height - 10, 30, -PLAYER_HEALTH - 10);
+	DrawRect("black", 10, canvas.height - 10, 30, -PLAYER_HEALTH - 10);
 	DrawRect("black", 15, canvas.height - 15, 20, -PLAYER_HEALTH);
 	DrawRect("red", 15, canvas.height - 15, 20, -player.health);
 
