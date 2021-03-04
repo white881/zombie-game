@@ -85,8 +85,6 @@ var zbuffer = [];
 // Items
 var items =
 [
-/*0*/ { name: "Nothing" },
- 
   
 //    --- Guns ---
 /*1*/ { name: "Pistol",              dmg: 3, range: { min: 70, max: 80 },   rate: 30, count: 1,  accr: 0.05,  speed: 1,   force: 0.5,  recoil: 0,    mag: 15,  reload: 100,  auto: false },
@@ -96,7 +94,8 @@ var items =
 /*5*/ { name: "Double-Barrel",       dmg: 2, range: { min: 10, max: 50 },   rate: 20, count: 12, accr: 0.5,   speed: 0.7, force: 2,    recoil: 1,    mag: 2,  reload: 200,  auto: false },
 /*6*/ { name: "Sub-Machine Gun",     dmg: 2, range: { min: 40, max: 70 },   rate: 8,  count: 1,  accr: 0.2,   speed: 1,   force: 0.3,  recoil: 0.1,  mag: 30, reload: 150,  auto: true  },
 /*7*/ { name: "Machine Gun",         dmg: 3, range: { min: 80, max: 125 },  rate: 12, count: 1,  accr: 0.1,   speed: 0.8, force: 0.8,  recoil: 0.25, mag: 24, reload: 200,  auto: true  },
-/*8*/ { name: "Mini Gun",            dmg: 2, range: { min: 80, max: 125 },  rate: 5,  count: 1,  accr: 0.15,  speed: 0.5, force: 1,    recoil: 0.5, mag: 200, reload: 1000, auto: true  }
+/*8*/ { name: "Mini Gun",            dmg: 2, range: { min: 80, max: 125 },  rate: 5,  count: 1,  accr: 0.15,  speed: 0.5, force: 1,    recoil: 0.5, mag: 200, reload: 1000, auto: true  },
+/*9*/ { name: "Mini Gun",            dmg: 90, range: { min: 90, max: 130 },  rate: 4,  count: 1,  accr: 0.175,  speed: 0.5, force: 2,    recoil: 0.2, mag: 1, reload: 90, auto: false  },
 ];
 
 // ==================== CLASSES ====================
