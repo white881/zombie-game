@@ -844,7 +844,7 @@ function UpdateGame ()
 		uiText = "";
 
 		// Spawn zombies -- debug
-		if (Math.random() < 99.02)
+		if (Math.random() <  0.02)
 		{
 			var x = cam.x;
 			var y = cam.y;
